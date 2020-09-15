@@ -1,0 +1,53 @@
+.new-registry, .message-error, .login, .message-ok, .users, .users-list {
+    width: 80%;
+    background-color: $box-background;
+    margin: auto;
+    padding: 3em;
+    @include center-items;
+    flex-direction: column;
+
+    img {
+        max-width: 256px;
+        margin: 0 auto;
+    }
+
+    form {
+        width: 80%;
+        margin: 0.5em 0;
+        font-size: 2.5em;
+        text-align: center;
+
+        input {
+            font-family: $main-font;
+            margin-bottom: 0.5em;
+            height: 32px;
+            width: 70%;
+        }
+
+        .cta {
+            width: 20%;
+        }
+    }
+}
+
+.message-error, .message-ok {   
+    img, h1 {
+        margin-bottom: 1em;
+    }
+}
+
+.login {
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.users-list {
+    max-height: 80vh;
+    overflow-y: scroll;
+    
+    h1 {
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,19 @@
+/* -------- FONT -------- */
+
+$main-font:'Poppins', sans-serif;
+$box-background: rgba(255,255,255,0.6);
+
+
+
+@mixin center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin buttons {
+    width: 142px;
+    height: 64px;
+    cursor: pointer;
+    transition: all 0.5s;
+}

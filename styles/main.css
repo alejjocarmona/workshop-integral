@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* -------- FONT -------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body, .initial-page {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: #226677;
+  background: -webkit-gradient(linear, left bottom, left top, from(#226677), to(#101030));
+  background: linear-gradient(0deg, #226677 0%, #101030 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .logo, .initial-page .logo {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .logo img, .initial-page .logo img {
+  width: 80%;
+}
+
+body .welcome, .initial-page .welcome {
+  width: 40%;
+  height: 80%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body h1, .initial-page h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 0 4em;
+}
+
+body .register, body .go-back, body .cta, .initial-page .register, .initial-page .go-back, .initial-page .cta {
+  width: 142px;
+  height: 64px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+body .register p, body .go-back p, body .cta p, .initial-page .register p, .initial-page .go-back p, .initial-page .cta p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .register:hover, body .register:active, body .go-back:hover, body .go-back:active, body .cta:hover, body .cta:active, .initial-page .register:hover, .initial-page .register:active, .initial-page .go-back:hover, .initial-page .go-back:active, .initial-page .cta:hover, .initial-page .cta:active {
+  opacity: 0.8;
+}
+
+body .register, body .go-back, body .cta, .initial-page .register, .initial-page .go-back, .initial-page .cta {
+  background: #044b07;
+  background: -webkit-gradient(linear, left top, right top, from(#044b07), to(#2d3477));
+  background: linear-gradient(90deg, #044b07 0%, #2d3477 100%);
+  border: 0;
+  border-radius: 12px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.new-registry, .message-error, .login, .message-ok, .users, .users-list {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: auto;
+  padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.new-registry img, .message-error img, .login img, .message-ok img, .users img, .users-list img {
+  max-width: 256px;
+  margin: 0 auto;
+}
+
+.new-registry form, .message-error form, .login form, .message-ok form, .users form, .users-list form {
+  width: 80%;
+  margin: 0.5em 0;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.new-registry form input, .message-error form input, .login form input, .message-ok form input, .users form input, .users-list form input {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0.5em;
+  height: 32px;
+  width: 70%;
+}
+
+.new-registry form .cta, .message-error form .cta, .login form .cta, .message-ok form .cta, .users form .cta, .users-list form .cta {
+  width: 20%;
+}
+
+.message-error img, .message-error h1, .message-ok img, .message-ok h1 {
+  margin-bottom: 1em;
+}
+
+.login form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.users-list {
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.users-list h1 {
+  margin-bottom: 16px;
+}
+
+#enrolled {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+#enrolled td,
+#enrolled th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#enrolled tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#enrolled tr {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+#enrolled tr:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+#enrolled th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #a88b1f;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

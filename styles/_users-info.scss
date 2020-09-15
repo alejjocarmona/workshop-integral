@@ -1,0 +1,33 @@
+#enrolled {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 24px;
+}
+  
+#enrolled td,
+#enrolled th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#enrolled tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.4);
+}
+
+#enrolled tr {
+    transition: all 0.4s;
+    cursor: pointer;
+}
+  
+#enrolled tr:hover {
+    background-color: #333;
+    color: #fff;
+}
+  
+#enrolled th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #a88b1f;
+    color: white;
+}
