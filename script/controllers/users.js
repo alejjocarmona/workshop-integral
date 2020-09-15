@@ -8,7 +8,7 @@ function getAllUsers(req, res) {
 
 function createUser(req, res) {
 	usersLogin.push(req.body);
-	return res.status(201).json({ ok: true, data: req.body, message: 'visitante inscrito' });
+	return res.status(201).json({ ok: true, data: req.body, message: 'Visitante inscrito' });
 }
 
 function jwtGeneration(req, res) {

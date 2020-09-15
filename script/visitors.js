@@ -39,7 +39,7 @@ function infoMessage() {
 		document.body.innerHTML = `
 		<div class="message-ok" id="message-ok">
 			<img src="./static/eventech.png" alt="">
-			<h1>Usuario registrado</h1>
+			<h1>${data.message}</h1>
 			<div class="go-home cta" id="go-home" onclick="registrySuccess()">
 				<p>
 					OK
@@ -51,7 +51,7 @@ function infoMessage() {
 		document.body.innerHTML = `
 		<div class="message-error" id="message-error">
 			<img src="./static/eventech.png" alt="">
-			<h1>Datos incorrectos</h1>
+			<h1>${data.message}</h1>
 			<div class="go-back cta" id="go-back" onclick="registryError()">
 				<p>
 					Volver al formulario

@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 function repeatedUser(req, res, next) {
 	let userRepeated = usersLogin.find((user) => user.email == req.body.email);
-	if (userRepeated !== undefined) return res.status(409).json({ ok: false, message: 'error, usuario ya registrado' });
+	if (userRepeated !== undefined) return res.status(409).json({ ok: false, message: 'Error, usuario ya registrado' });
 	else return next();
 }
 
@@ -13,7 +13,7 @@ function emailValidator(req, res, next) {
 
 	if (req.method == 'POST' && !password) {
 		if (email.includes('hotmail.com') || email.includes('gmail.com') || email.includes('yahoo.com')) {
-			return res.status(409).json({ ok: false, message: 'error, ese tipo de email no esta permitido' });
+			return res.status(409).json({ ok: false, message: 'Error, ese tipo de email no esta permitido' });
 		} else return next();
 	} else return next();
 }
@@ -23,13 +23,13 @@ function dataValidator(req, res, next) {
 
 	if (req.method == 'POST' && !req.body.password) {
 		if (name && lastName && email && age) return next();
-		else return res.status(409).json({ ok: false, message: 'error, faltan datos' });
+		else return res.status(409).json({ ok: false, message: 'Error, faltan datos' });
 	} else return next();
 }
 
 function adminValidator(req, res, next) {
 	if (req.body.userAdmin === userAdmin && req.body.password == password) return next();
-	else return res.status(409).json({ ok: false, message: 'error, credenciales incorrectas' });
+	else return res.status(409).json({ ok: false, message: 'Error, credenciales incorrectas' });
 }
 
 function jwtValidation(req, res, next) {

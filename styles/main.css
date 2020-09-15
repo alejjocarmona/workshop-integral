@@ -229,7 +229,7 @@ body .register, body .go-back, body .cta, .initial-page .register, .initial-page
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-#enrolled tr {
+#enrolled tbody tr {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   cursor: pointer;
